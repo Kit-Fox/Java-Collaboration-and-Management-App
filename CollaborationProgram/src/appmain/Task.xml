@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- A basic outline of formatting for the task XML layout. This will be used later on in order to make sure that the program will be able to 
+	read and write the information correctly. Format for ID is Date followed by time (24hour format) followed by first letter and third of the day. Followed by
+	a random integer. Seperated by colons -->
+	<Task ID = "1/01/01:1330:MN:7823"> 
+		<TName Priority = "High">Get Task Manager Working</TName>
+		<TPart Type = "Planning">Me</TPart>
+		<TDesc Status = "Incomplete">Develop task manager.</TDesc>	
+	</Task>
+</root>
