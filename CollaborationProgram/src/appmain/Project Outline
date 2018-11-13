@@ -1,0 +1,15 @@
+Java Collaboration App Project
+
+Project Outline:
+	
+	The aim of this project is to have a collaborative application in which users can do the following:
+		> Text Chat
+		> Upload and Discuss Work
+		> Voice Chat
+		> Upload Files and Code With Syntax Highlighting.
+
+Project Dependencies:
+
+Considerations:
+	
+	>Functionality in the UI

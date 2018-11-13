@@ -6,7 +6,7 @@ public class ClientCode
 {
 	//Initialize sockets
 	private Socket socket = null;
-	private DataInputStream input = null;
+	private BufferedReader input = null;
 	private DataOutputStream out = null;
 	
 	//Constructor to put IP address and port
@@ -20,7 +20,7 @@ public class ClientCode
 			System.out.println("Connected");
 			
 			//Take input from Terminal -- Will Be Phased Out Later
-			input = new DataInputStream(System.in);
+			input = new BufferedReader(new InputStreamReader(System.in));
 			
 			//Send output to socket -- Will Be Reworked Later
 			out = new DataOutputStream(socket.getOutputStream());
@@ -33,8 +33,8 @@ public class ClientCode
 		catch (IOException i) 
 		{
 			System.out.println(i);
+
 		}
-		
-		//String To Read Message Input From
 	}
 }
+	

@@ -1,7 +1,6 @@
 package appmain;
 
 // Taken From https://www.geeksforgeeks.org/stax-xml-parser-java/
-//Java Code to implement StAX parser 
 import java.io.File; 
 import java.io.FileNotFoundException; 
 import java.io.FileReader; 
@@ -27,30 +26,20 @@ public class XMLReaderAndWriter
 	 public static void FileFind() throws XMLStreamException, FileNotFoundException 
 	 { 
 		 
-	     // Create a File object with appropriate xml file name 
 	     File file = new File(fileURL.getPath()); 
 	     	
-	     // Function for accessing the data 
 	     parser(file); 
 	 } 
 	
 	 public static void parser(File file) throws XMLStreamException, FileNotFoundException 
 	 { 
-	     // Variables to make sure whether a element 
-	     // in the xml is being accessed or not 
-	     // if false that means elements is 
-	     // not been used currently , if true the element or the 
-	     // tag is being used currently 
 	     Task = TName = TPart = TDesc = false; 
 	
-	     // Instance of the class which helps on reading tags 
 	     XMLInputFactory factory = XMLInputFactory.newInstance(); 
 	
-	     // Initializing the handler to access the tags in the XML file 
 	     XMLEventReader eventReader = 
 	              factory.createXMLEventReader(new FileReader(file)); 
-	
-	     // Checking the availabilty of the next tag 
+	 
 	     while (eventReader.hasNext()) 
 	     { 
 	         // Event is actually the tag . It is of 3 types 
